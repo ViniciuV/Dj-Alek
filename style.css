@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: url(imagens/Design\ sem\ nome\ \(1\).png);
+
+
+}
+
+nav > a {
+    color: darkgray;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+nav > a:hover {
+    background-color: white;
+    color: darkgray;
+}
+
+.cabecalho {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagen {
+    height: 72px;
+    border-radius: 20px;
+}
+
+.cabecalhomenu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+}
+
+.conteudo-pricipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-pricipal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-pricipal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+}
+
+.conteudo-pricipal-escrito-sbtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}  
+
+.conteudo-pricipal-escrito-botao {
+    background-color: rgb(195, 0, 255);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+
+}
+
+.conteudo-pricipal-escrito-botao:hover {
+    background-color: white;
+    color: darkgray;
+}
+
+.conteudo-pricipal-imagem {
+    height: 430px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrado {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF2E7;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+    
+}
+
+
+
+.cabecalhomenu1 {
+    margin-top: 3%;
+    padding-left: 35%;
+    margin-top: 15px;
+}
+
+
+
+
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 50px);
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) transpatent,transpatent);
+    transform-origin: top;
+    transform: skew(45deg);
+    pointer-events: none;
+}
+
+
+
+
+.searchBox {
+    
+    position: relative;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.searchBox:hover {
+    width: 400px;
+}
+
+
+
+
+
+.searchBox input {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px 25px;
+    outline: none;
+    font-size: 1.1em;
+    color: #555;
+    background: linear-gradient(#ffffff, #ffffff);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.1), 30px 30px 30px rgba(0, 0, 0, 0.1), inset 1px 1px 2px #fff
+}
+
+.searchBox input::placeholder, .searchBox input {
+    color: transparent;
+}
+
+.searchBox:hover input::placeholder,
+.searchBox:hover input {
+    color: #555;
+}
+
+#pesquisar {
+    position: absolute;
+    right: 20px;
+    color: #555;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px)
+{
+   section 
+   {
+       padding: 150px 20px;
+   } 
+
+   header 
+   {
+       padding: 20px;
+   }
+   .cabecalhomenu
+   {
+       display: none;
+   }
+
+   .cabecalhomenu.active
+   {
+       top: 0;
+       left: 10;
+       width: 100%;
+       height: 100%;
+       margin-left: 10%;
+       margin-right: 10%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+   }
+   
+   header nav a
+   {
+       margin: 10px 0;
+       
+   }
+
+   .toggle
+   {
+       
+       position: absolute;
+       top: 20px;
+       right: 20px;
+       width: 40px;
+       height: 40px;
+       background: #0169b2 url(imagens/menu.png);
+       background-size: 30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       cursor: pointer;
+       z-index: 1000;
+       border-radius: 2px;
+   }
+   .toggle.active
+   {
+    background: #0169b2 url(imagens/close.png);
+       background-size: 25px;
+       background-repeat: no-repeat;
+       background-position: center;
+   }
+
+}
+
+.list
+{
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    gap: 6px;
+    padding-left: 45%;
+}
+
+.list .user
+{
+    position: relative;
+    background: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.list .user .imgBx
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.list .user .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .user .details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list .user .details h3 
+{
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.list .user .details p
+{
+    font-weight: 500;
+    line-height: 0.8em;
+    color: rgba(0, 0, 0, 6);
+} 
+
+.navigation
+{
+    position: relative;
+    width: 40px;
+    height: 70px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation.active
+{
+    width: 200px;
+    
+}
+
+.navigation span
+{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #222327;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation span:nth-child(1)
+{
+    transform: translateY(-12px);
+}
+
+.navigation span:nth-child(3)
+{
+    transform: translateY(12px);
+}
+
+
+.navigation.active span
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navigation.active span:nth-child(1)
+.navigation.active span:nth-child(3)
+{
+    transform: translateY(0);
+}
+
+.navigation.active span:nth-child(1)
+{
+    transform: translateY(0) translateX(-60px);
+}
+
+.navigation.active span:nth-child(3)
+{
+    transform: translateY(0) translateX(60px);
+}
+
+.navigation span i 
+{
+ transition: 0.5s;
+ font-size: 0em;
+}
+
+.navigation.active span i
+{
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.navigation.active span:hover 
+{
+   background: #9071da; 
+}
+
+.navigation.active span:hover i
+{
+    color:#222327;
+}
